@@ -134,9 +134,11 @@ def interlist(a,b):
     return ret
 
 if __name__ == '__main__':
+    
+    #get the code efforts of every contributor
+    commit_effort_count()
     #first get the commits which we need to measure
     get_need_scan_commits()
     #reset to one version and measure
     run()
-    #get the code efforts of every contributor
-    commit_effort_count()
+
