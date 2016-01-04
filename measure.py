@@ -58,7 +58,7 @@ def get_indexs():
     return log_indexs
 
 def run():
-    get_indexs()
+    #get_indexs()
     length = len(log_indexs)
     print "the count of all commits is" + str(len(log_indexs))
     for index,item in list(enumerate(commits_need_scaned)):
@@ -134,9 +134,10 @@ def interlist(a,b):
     return ret
 
 if __name__ == '__main__':
+    #get the code efforts of every contributor
+    commit_effort_count()
     #first get the commits which we need to measure
     get_need_scan_commits()
     #reset to one version and measure
     run()
-    #get the code efforts of every contributor
-    commit_effort_count()
+
